@@ -1,0 +1,32 @@
+[project]
+name = "exploratory-dl"
+version = "0.1.0"
+description = "exploratory toolbox for deep learning"
+authors = [
+    {name = "Jake Chin",email = "jakechin.mk@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">3.11, <3.12"
+dependencies = [
+    "torch (>=2.6.0,<3.0.0)",
+    "torchvision (>=0.21.0,<0.22.0)",
+    "torchaudio (>=2.6.0,<3.0.0)",
+    "ipykernel (>=6.29.5,<7.0.0)",
+    "tensorflow[and-cuda] (>=2.19.0,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "pytorch-gpu-src"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
+
+
+[tool.poetry.dependencies]
+torch = {source = "pytorch-gpu-src"}
+torchvision = {source = "pytorch-gpu-src"}
+torchaudio = {source = "pytorch-gpu-src"}

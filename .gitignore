@@ -1,0 +1,5 @@
+*kaggle/
+*test/
+*info/
+*.log
+*poetry.lock

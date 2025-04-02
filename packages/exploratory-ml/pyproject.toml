@@ -1,0 +1,19 @@
+[project]
+name = "exploratory-ml"
+version = "0.1.0"
+description = "exploratory toolbox for machine learning utilising pycaret"
+authors = [
+    {name = "Jake Chin",email = "jakechin.mk@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">3.11, <3.12"
+dependencies = [
+    "kaleido (==0.2.1)",
+    "pycaret[full] (>=3.3.2,<4.0.0)",
+    "explainerdashboard (==0.3.8)",
+]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
