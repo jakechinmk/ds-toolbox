@@ -1,0 +1,25 @@
+[project]
+name = "custom-ml"
+version = "0.1.0"
+description = "customize machine learning toolbox"
+authors = [
+    {name = "Jake Chin",email = "jakechin.mk@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11, <3.12"
+dependencies = [
+    "feature-engine (>=1.8.3,<2.0.0)",
+    "ipykernel (>=6.29.5,<7.0.0)",
+    "catboost (>=1.2.7,<2.0.0)",
+    "xgboost (>=3.0.0,<4.0.0)",
+    "lightgbm (>=4.6.0,<5.0.0)",
+    "ipywidgets (>=8.1.5,<9.0.0)",
+    "optbinning (>=0.20.1,<0.21.0)",
+    "wordcloud (>=1.9.4,<2.0.0)"
+]
+package-mode = false
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
